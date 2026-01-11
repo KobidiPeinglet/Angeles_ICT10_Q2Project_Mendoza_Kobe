@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Info</title>
+    <style>
+      .navbar-custom {
+        background-color: rgb(82, 116, 211); 
+      }
+      .navbar-custom .navbar-brand,
+      .navbar-custom .nav-link {
+          color: #fff;
+          justify-content: center;
+        margin: 0 15px;
+      }
+      .nav-item {
+        padding: 3px;
+        gap: 5px;
+      }
+      .navbar-custom .nav-link:hover {
+        color: #d1ecf1; 
+      }
+      body{
+        text-align: center;
+        background-color: rgb(240, 245, 252);
+      }
+      hr{
+        max-width: 1250px;
+        margin: auto;
+      }
+      .container-main{
+        margin: auto;
+        margin-top: 50px;
+        padding: 20px;
+        background-color: rgb(205, 224, 243);
+        max-width: 1500px;
+        min-height: 600px;
+      }
+      select{
+        width: 750px;
+        padding: auto;
+        margin: 25px;
+        height: 50px;
+        border-radius: 5px;
+      }
+      h4{
+        margin-top: 15px;
+        font-family: sans-serif;
+      }
+      .styling{
+        margin: 20px;
+        background-color: rgb(149, 189, 231);
+        padding: 20px;
+        text-align: left;
+        margin-left: 200px;
+        margin-right: 200px;
+        border-radius: 20px;
+      }
+      button{
+        border-radius: 10px;
+        margin: 10px;
+      }
+      footer{
+        background-color: rgb(198, 219, 252);
+      }
+      .footer{
+        text-align: left;
+        margin-left: 775px;
+      }
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+        <a class="navbar-brand" href="index.html"><h3>O.B. Montessori Center</h3></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GWA-Cal.html">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Clubs.html">Clubs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-main">
+      <h1>School Club information</h1>
+      <hr>
+        <h4>Selection for Clubs</h4>
+        <label for="clubs"></label>
+        <select name="clubs" id="clubs">
+          <option value="Club1">Basketball Varsity</option>
+          <option value="Club2">ComArts</option>
+          <option value="Club3">Cocc</option>
+          <option value="Club4">Glee Club</option>
+          <option value="Club5">Math Club</option>
+          <option value="Club6">Robotics Club</option>
+          <option value="Club7">Science Club</option>
+          <option value="Club8">Social Studies Club</option>
+        </select> <br>
+        <button py-click="Show_info">Show Club Information</button> <br> <br>
+
+        <div class="styling">
+          <div id="output"></div>
+        </div>
+      </div>
+
+      <br> <br>
+
+    <footer> <br>
+      <div class="flex" style="display: flex;">
+      <img src="OBMCLOGO.pdf" class="img-fluid mb-2" style="width: 150px; margin-left: 400px;">
+      <div class="footer">
+        Location: <br>
+        Angeles City, Pampanga <br>
+        Fairview, Quezon City <br>
+        Greenhills, San Juan City <br>
+        B.F. Homes, Las Piñas City  <br>
+        Sta. Ana, Manila City <br>
+      </div>
+      </div>
+    </footer>
+    <script type="py" src="Clubs.py"></script>
+</body>
+</html>
